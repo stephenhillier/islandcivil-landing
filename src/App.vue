@@ -20,11 +20,13 @@
       </v-layout>
     </v-list>
     <hero/>
+    <products/>
   </v-app>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
+import Products from '@/components/Products'
 
 export default {
   data () {
@@ -38,7 +40,8 @@ export default {
   },
   name: 'App',
   components: {
-    'hero': Hero
+    'hero': Hero,
+    'products': Products
   }
 }
 </script>
