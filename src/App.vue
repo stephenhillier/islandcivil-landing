@@ -3,7 +3,7 @@
     <v-toolbar app class="white">
       <v-spacer class="hidden-sm-and-up" style="margin-left: -10px"/>
       <v-toolbar-title class="text-xs-center brand-logo">
-        ISLAND<span class="hidden-xs-only blue--text text--darken-3 accented-text">Civil</span>
+        <v-icon x-large class="primary--text hidden-sm-and-down" style="margin-top: -3px">filter_hdr</v-icon>ISLAND<span class="blue--text text--darken-3 accented-text">Civil</span>
       </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-items class="hidden-xs-only">
@@ -22,6 +22,7 @@
     </v-list>
     <painpoint/>
     <products/>
+    <demo/>
     <consulting/>
   </v-app>
 </template>
@@ -31,6 +32,7 @@ import Hero from '@/components/Hero'
 import Products from '@/components/SectionProducts'
 import Painpoint from '@/components/SectionPainpoint'
 import Consulting from '@/components/SectionConsulting'
+import Demo from '@/components/SectionDemo'
 
 export default {
   data () {
@@ -47,7 +49,8 @@ export default {
     'hero': Hero,
     'products': Products,
     'painpoint': Painpoint,
-    'consulting': Consulting
+    'consulting': Consulting,
+    'demo': Demo
   }
 }
 </script>
