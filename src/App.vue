@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-toolbar app class="white">
-      <v-spacer class="hidden-sm-and-up" style="margin-left: -10px"/>
+      <v-spacer class="hidden-sm-and-up brand-spacer"/>
       <v-toolbar-title class="text-xs-center brand-logo">
-        <v-icon x-large class="primary--text hidden-sm-and-down" style="margin-top: -3px">filter_hdr</v-icon>ISLAND<span class="blue--text text--darken-3 accented-text">Civil</span>
+        <v-icon x-large class="primary--text hidden-sm-and-down brand-icon">filter_hdr</v-icon>ISLAND<span class="blue--text text--darken-3 accented-text">Civil</span>
       </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-items class="hidden-xs-only">
@@ -24,6 +24,7 @@
     <products/>
     <demo/>
     <consulting/>
+    <ic-footer/>
   </v-app>
 </template>
 
@@ -33,6 +34,7 @@ import Products from '@/components/SectionProducts'
 import Painpoint from '@/components/SectionPainpoint'
 import Consulting from '@/components/SectionConsulting'
 import Demo from '@/components/SectionDemo'
+import Footer from '@/components/SectionFooter'
 
 export default {
   data () {
@@ -50,7 +52,8 @@ export default {
     'products': Products,
     'painpoint': Painpoint,
     'consulting': Consulting,
-    'demo': Demo
+    'demo': Demo,
+    'ic-footer': Footer
   }
 }
 </script>
@@ -63,8 +66,12 @@ export default {
   font-size: 36px;
   font-weight: bold;
   color: #2c3e50;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+}
+.brand-spacer {
+  margin-left: -10px!important;
+}
+.brand-icon {
+  margin-top: -3px;
 }
 .accented-text {
   font-family: 'Raleway', sans-serif;
