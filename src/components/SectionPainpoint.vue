@@ -17,12 +17,4 @@ export default {
 </script>
 
 <style>
-.product-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  color: #2c3e50;
-}
-p {
-  font-family: 'Raleway', sans-serif;
-}
 </style>

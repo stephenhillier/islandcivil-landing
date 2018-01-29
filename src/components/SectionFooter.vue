@@ -26,7 +26,7 @@ export default {
   color: #2c3e50;
 }
 .footer-divider {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .stacking {
   margin-bottom: -10px;

@@ -1,25 +1,8 @@
 <template>
   <v-app>
-    <v-toolbar app class="white">
-      <v-spacer class="hidden-sm-and-up brand-spacer"/>
-      <v-toolbar-title class="text-xs-center brand-logo">
-        <v-icon x-large class="primary--text hidden-sm-and-down brand-icon">filter_hdr</v-icon>ISLAND<span class="blue--text text--darken-3 accented-text">Civil</span>
-      </v-toolbar-title>
-      <v-spacer/>
-      <v-toolbar-items class="hidden-xs-only">
-        <v-btn flat class="blue--text text--darken-2 accented-text" v-for="item in menu" :key="item.name">{{ item.name }}</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <top-nav :menu="menu"/>
     <hero/>
-    <v-list class="hidden-sm-and-up">
-      <v-layout column align-center justify-center>
-        <v-list-tile v-for="item in menu" :key="item.name">
-          <v-list-tile-content>
-            <v-btn flat class="blue--text text--darken-2">{{ item.name }}</v-btn>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-layout>
-    </v-list>
+    <mobile-menu :menu="menu" class="hidden-sm-and-up"/>
     <painpoint/>
     <products/>
     <demo/>
@@ -29,11 +12,13 @@
 </template>
 
 <script>
+import TopNav from '@/components/TopNav'
+import MobileMenu from '@/components/MobileMenu'
 import Hero from '@/components/Hero'
-import Products from '@/components/SectionProducts'
 import Painpoint from '@/components/SectionPainpoint'
-import Consulting from '@/components/SectionConsulting'
+import Products from '@/components/SectionProducts'
 import Demo from '@/components/SectionDemo'
+import Consulting from '@/components/SectionConsulting'
 import Footer from '@/components/SectionFooter'
 
 export default {
@@ -48,6 +33,8 @@ export default {
   },
   name: 'App',
   components: {
+    'top-nav': TopNav,
+    'mobile-menu': MobileMenu,
     'hero': Hero,
     'products': Products,
     'painpoint': Painpoint,
