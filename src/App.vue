@@ -22,6 +22,7 @@
     </v-list>
     <painpoint/>
     <products/>
+    <consulting/>
   </v-app>
 </template>
 
@@ -29,6 +30,7 @@
 import Hero from '@/components/Hero'
 import Products from '@/components/SectionProducts'
 import Painpoint from '@/components/SectionPainpoint'
+import Consulting from '@/components/SectionConsulting'
 
 export default {
   data () {
@@ -44,7 +46,8 @@ export default {
   components: {
     'hero': Hero,
     'products': Products,
-    'painpoint': Painpoint
+    'painpoint': Painpoint,
+    'consulting': Consulting
   }
 }
 </script>
@@ -61,6 +64,14 @@ export default {
   margin-bottom: 0px;
 }
 .accented-text {
+  font-family: 'Raleway', sans-serif;
+}
+.product-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #2c3e50;
+}
+p {
   font-family: 'Raleway', sans-serif;
 }
 </style>
