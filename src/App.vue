@@ -20,6 +20,7 @@
         </v-list-tile>
       </v-layout>
     </v-list>
+    <painpoint/>
     <products/>
   </v-app>
 </template>
@@ -27,6 +28,7 @@
 <script>
 import Hero from '@/components/Hero'
 import Products from '@/components/SectionProducts'
+import Painpoint from '@/components/SectionPainpoint'
 
 export default {
   data () {
@@ -41,7 +43,8 @@ export default {
   name: 'App',
   components: {
     'hero': Hero,
-    'products': Products
+    'products': Products,
+    'painpoint': Painpoint
   }
 }
 </script>
