@@ -6,7 +6,7 @@
     </v-toolbar-title>
     <v-spacer/>
     <v-toolbar-items class="hidden-xs-only">
-      <v-btn flat class="blue--text text--darken-2 accented-text" v-for="item in menu" :key="item.name">{{ item.name }}</v-btn>
+        <v-btn v-for="item in menu" :key="item.name" :href="item.href" flat class="blue--text text--darken-2 accented-text">{{ item.name }}</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

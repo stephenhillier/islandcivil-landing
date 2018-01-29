@@ -3,9 +3,9 @@
     <top-nav :menu="menu"/>
     <hero/>
     <mobile-menu :menu="menu" class="hidden-sm-and-up"/>
-    <painpoint/>
+    <painpoint id="earthworks"/>
     <products/>
-    <demo/>
+    <demo id="features"/>
     <consulting/>
     <ic-footer/>
   </v-app>
@@ -25,9 +25,14 @@ export default {
   data () {
     return {
       menu: [
-        { name: 'Solutions' },
-        { name: 'Pricing' },
-        { name: 'Try a Demo' }
+        {
+          name: 'Solutions',
+          href: '#earthworks'
+        },
+        {
+          name: 'Contact us',
+          href: 'mailto:steve@islandcivil.com'
+        }
       ]
     }
   },
