@@ -11,7 +11,7 @@
       <div class="subheading mb-3 hero-text-sub text-xs-center">Find out how <span class="brand-text">ISLAND Civil</span> can help you <span class="brand-text">win more contracts</span> and <span class="brand-text">deliver better solutions</span> for your clients</div>
       <v-btn
         class="mt-3 green darken-1 accented-text" dark
-        primary
+        href="#earthworks"
       >
         Learn More
       </v-btn>
