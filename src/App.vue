@@ -1,13 +1,15 @@
 <template>
   <v-app>
     <top-nav :menu="menu"/>
-    <hero/>
-    <mobile-menu :menu="menu" class="hidden-sm-and-up"/>
-    <painpoint id="earthworks"/>
-    <products/>
-    <demo id="features"/>
-    <consulting/>
-    <ic-footer/>
+    <v-content>
+      <hero/>
+      <mobile-menu :menu="menu" class="hidden-sm-and-up"/>
+      <painpoint id="earthworks"/>
+      <products/>
+      <demo id="features"/>
+      <consulting/>
+      <ic-footer/>
+    </v-content>
   </v-app>
 </template>
 
