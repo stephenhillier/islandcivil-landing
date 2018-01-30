@@ -1,5 +1,5 @@
 <template>
-  <v-parallax :src="getImgUrl('dam3.jpg')" height=450>
+  <v-parallax :src="getImgUrl('dam3.jpg')">
     <v-layout
       column
       align-center

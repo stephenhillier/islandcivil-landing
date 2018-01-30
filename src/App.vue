@@ -55,8 +55,8 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 .brand-logo {
   font-family: 'Zilla Slab', serif;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 36px!important;
+  font-weight: bold!important;
   color: #2c3e50;
 }
 .brand-spacer {
@@ -70,10 +70,19 @@ export default {
 }
 .product-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: bold!important;
   color: #2c3e50;
 }
 p {
   font-family: 'Raleway', sans-serif;
+}
+.hero-text-header {
+  font-family: 'Zilla Slab', serif;
+}
+.hero-text-sub {
+  font-family: 'Raleway', sans-serif;
+}
+.brand-text {
+  font-weight: bold;
 }
 </style>
