@@ -11,5 +11,6 @@ export default new Router({
       name: 'Hero',
       component: Hero
     }
-  ]
+  ],
+  mode: 'history'
 })
