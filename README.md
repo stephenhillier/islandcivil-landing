@@ -4,7 +4,7 @@
 
 ## Background
 
-The [Earthworks API/webapp](http://www.github.com/stephenhillier/earthworks-demo) is fully functional and deserves a landing page. I set up a website at [http://www.islandcivil.com](http://www.islandcivil.com) to show off two products: Earthworks Server and Earthworks Desktop.
+The [Earthworks API/webapp](http://www.github.com/stephenhillier/earthworks-demo) is fully functional and deserves a landing page. A website was set up at [http://www.islandcivil.com](http://www.islandcivil.com) to show off two products: Earthworks Server and Earthworks Desktop.
 
 The landing page was built with Vuetify, bundled with webpack and served as static files by nginx.
 
