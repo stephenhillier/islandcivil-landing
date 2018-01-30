@@ -1,6 +1,16 @@
 # islandcivil-landing
 
-> Islandcivil.com landing page
+> Islandcivil.com landing page. Built with Vue.JS and Vuetify
+
+## Background
+
+The [Earthworks API/webapp](http://www.github.com/stephenhillier/earthworks-demo) is fully functional and deserves a landing page. I set up a website at [http://www.islandcivil.com](http://www.islandcivil.com) to show off two products: Earthworks Server and Earthworks Desktop.
+
+The landing page was built with Vuetify, bundled with webpack and served as static files by nginx.
+
+## Screenshot
+
+![Islandcivil.com](./screenshot.png)
 
 ## Build Setup
 
@@ -23,5 +33,3 @@ npm run unit
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
